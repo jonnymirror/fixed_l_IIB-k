@@ -1,0 +1,43 @@
+k=0 l=3
+No
+duration = 0.001sec.
+
+k=1 l=3
+No
+duration = 0.002sec.
+
+k=2 l=3
+No
+duration = 0.038sec.
+
+k=3 l=3
+No
+duration = 0.367sec.
+
+k=4 l=3
+No
+duration = 2.583sec.
+
+k=5 l=3
+No
+duration = 14.067sec.
+
+k=6 l=3
+No
+duration = 62.68sec.
+
+k=7 l=3
+No
+duration = 234.229sec.
+
+k=8 l=3
+No
+duration = 747.717sec.
+
+k=9 l=3
+No
+duration = 2123.6sec.
+
+k=10 l=3
+Yes
+duration = 3600.1sec.

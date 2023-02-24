@@ -73,4 +73,3 @@ duration = 2040.93sec.
 k=18 l=3
 Yes
 duration = 3600.04sec.
-

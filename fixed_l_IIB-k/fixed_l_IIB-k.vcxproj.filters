@@ -25,5 +25,14 @@
     <Text Include="iceland_threshold.txt" />
     <Text Include="kangaroos.txt" />
     <Text Include="kangaroos_threshold.txt" />
+    <Text Include="Cities.txt" />
+    <Text Include="Cities_threshold.txt" />
+    <Text Include="Cities_time.txt" />
+    <Text Include="Zackary_karete_club.txt" />
+    <Text Include="Zackary_karate_club_threshold.txt" />
+    <Text Include="Zackary_karate_club_time.txt" />
+    <Text Include="moreno_zebra.txt" />
+    <Text Include="moreno_zebra_threshold.txt" />
+    <Text Include="moreno_zebra_time.txt" />
   </ItemGroup>
 </Project>

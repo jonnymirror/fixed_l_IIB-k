@@ -188,7 +188,7 @@ void overlapping_combination(long long int s, long long int t) {
 		cout << "Timeout!" << endl;
 		return;
 	}
-	if (exist)return;
+	//if (exist)return;
 	//cout << "overlapping_combination 開始　s=" << s << " t=" << t << endl;
 	if (s == nd && t == 0) {
 		//デバック用開始.
@@ -288,7 +288,7 @@ void IIB_k() {
 //メイン関数.
 int main() {
 	//入力開始.
-	ifstream ifs1("iceland.txt");
+	ifstream ifs1("moreno_zebra.txt");
 
 	if (!ifs1) {
 		std::cout << "Errer!";
@@ -326,7 +326,7 @@ int main() {
 
 	ifs1.close();
 
-	ifstream ifs2("iceland_threshold.txt");
+	ifstream ifs2("moreno_zebra_threshold.txt");
 
 	if (!ifs2) {
 		std::cout << "Error!";
@@ -414,7 +414,6 @@ int main() {
 		}
 		*/
 		if (exist) {
-			Yescount++;
 			outputfile << "k=" << k << " l=" << l << endl;
 			outputfile << "Yes" << endl;
 			clock_t end = clock();     // 時間測定終了.
@@ -424,6 +423,10 @@ int main() {
 			cout << "Yes" << endl;
 			cout << "duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
 			cout << endl;
+			if ((double)(end - start) / CLOCKS_PER_SEC > 3600) {
+				cout << "Timeout" << endl;
+				return 0;
+			}
 		}
 		else {
 			outputfile << "k=" << k << " l=" << l << endl;
@@ -435,8 +438,11 @@ int main() {
 			cout << "No" << endl;
 			cout << "duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
 			cout << endl;
+			if ((double)(end - start) / CLOCKS_PER_SEC > 3600) {
+				cout<<"Timeout"<<endl;
+				return 0;
+			}
 		}
-		if (Yescount == 1)return 0;
 	}
 	return 0;
 }
